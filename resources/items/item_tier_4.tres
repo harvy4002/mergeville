@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ItemDefinition" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_definition.gd" id="1_script"]
+[ext_resource type="Resource" path="res://resources/items/item_tier_5.tres" id="2_next"]
+
+[resource]
+script = ExtResource("1_script")
+tier = 4
+display_name = "Tree"
+color = Color(0.745098, 0.890196, 0.941176, 1)
+next_tier = ExtResource("2_next")

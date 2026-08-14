@@ -1,0 +1,149 @@
+{
+  "version": 1,
+  "skills": {
+    "accessibility-review": {
+      "source": "hippo-digital/ai-skills-catalogue",
+      "sourceType": "github",
+      "skillPath": "skills/qa/accessibility-review/SKILL.md",
+      "computedHash": "c0eaec9665ae1b3c0829f10553dfeca8c72e31507d64c093fc37a6a17a4c7019"
+    },
+    "adr": {
+      "source": "hippo-digital/ai-skills-catalogue",
+      "sourceType": "github",
+      "skillPath": "skills/engineering/adr/SKILL.md",
+      "computedHash": "a386be297620afcd7d4858081c121603595a3346b77064ad80b6e85e1021a694"
+    },
+    "architecture": {
+      "source": "hippo-digital/ai-skills-catalogue",
+      "sourceType": "github",
+      "skillPath": "skills/engineering/architecture/SKILL.md",
+      "computedHash": "af49597ee821369bd27d54fa0f1dc184a9bb46e860d0052d616575ef373c111d"
+    },
+    "ask-question": {
+      "source": "hippo-digital/ai-skills-catalogue",
+      "sourceType": "github",
+      "skillPath": "skills/delivery/ask-question/SKILL.md",
+      "computedHash": "41c0b233df656f4a4789cd1ccff1aabb2632baa0b2f100eacb0b74dc9ee66f47"
+    },
+    "assess-security": {
+      "source": "hippo-digital/ai-skills-catalogue",
+      "sourceType": "github",
+      "skillPath": "skills/security/assess-security/SKILL.md",
+      "computedHash": "dece571a9dcfe9ecea65adf65c5441ad7921c40e4f0606191517f68ba1bce13b"
+    },
+    "code-review": {
+      "source": "hippo-digital/ai-skills-catalogue",
+      "sourceType": "github",
+      "skillPath": "skills/engineering/code-review/SKILL.md",
+      "computedHash": "5ecf83d46b0e74473d4a5a7507b13107840d6ef9ebd2ec57ae4284e67d8a1aad"
+    },
+    "design": {
+      "source": "hippo-digital/ai-skills-catalogue",
+      "sourceType": "github",
+      "skillPath": "skills/design/design/SKILL.md",
+      "computedHash": "bccb7fb6f4f7bd65a7093c5250ab38d3a1ccf5df76889ff66dcce705dcd5fb79"
+    },
+    "design-guidelines": {
+      "source": "hippo-digital/ai-skills-catalogue",
+      "sourceType": "github",
+      "skillPath": "skills/design/design-guidelines/SKILL.md",
+      "computedHash": "2bbde6de5623e635e53d5e2693125042ad767e2107f620ebb0d732f52aadca0c"
+    },
+    "documentation": {
+      "source": "hippo-digital/ai-skills-catalogue",
+      "sourceType": "github",
+      "skillPath": "skills/engineering/documentation/SKILL.md",
+      "computedHash": "2f8675b358f124238de62459fa178ac674debeba46c0dd6fb701fb48759b59cd"
+    },
+    "feature": {
+      "source": "hippo-digital/ai-skills-catalogue",
+      "sourceType": "github",
+      "skillPath": "skills/product/feature/SKILL.md",
+      "computedHash": "38ab326dd77af31b83aaa5980f1e10e334f942a4c690e18b6de6bc4fb68fc4cc"
+    },
+    "finalise": {
+      "source": "hippo-digital/ai-skills-catalogue",
+      "sourceType": "github",
+      "skillPath": "skills/engineering/finalise/SKILL.md",
+      "computedHash": "c77e08acadffba1aeeef3ea23baa06a81c3eaa3a5afb3c161305a514a411a286"
+    },
+    "fix-bug": {
+      "source": "hippo-digital/ai-skills-catalogue",
+      "sourceType": "github",
+      "skillPath": "skills/engineering/fix-bug/SKILL.md",
+      "computedHash": "0566aad47821694f6484def494adcf1a9244bc1d67b3bd2440ac52e9d388458a"
+    },
+    "generate-test-cases": {
+      "source": "hippo-digital/ai-skills-catalogue",
+      "sourceType": "github",
+      "skillPath": "skills/qa/generate-test-cases/SKILL.md",
+      "computedHash": "1d88c40fe54285d9e6c6edabc797c15713e97f918b485f6dc26da8f6780cfb7f"
+    },
+    "implement": {
+      "source": "hippo-digital/ai-skills-catalogue",
+      "sourceType": "github",
+      "skillPath": "skills/engineering/implement/SKILL.md",
+      "computedHash": "817d09d4f01e78b1c0aab57d00893133e931a6378571d45a1c827c5398fc7c6f"
+    },
+    "init-project": {
+      "source": "hippo-digital/ai-skills-catalogue",
+      "sourceType": "github",
+      "skillPath": "skills/general/init-project/SKILL.md",
+      "computedHash": "c371b3c5d7e9de13fd814b1ec19232faa6216060f97a4e5c23a3c2910d29a463"
+    },
+    "propose": {
+      "source": "hippo-digital/ai-skills-catalogue",
+      "sourceType": "github",
+      "skillPath": "skills/product/propose/SKILL.md",
+      "computedHash": "4e4e7f0e5c897b110ecc8a637335348974bbdfc1cfd759770cca8eb927f82e54"
+    },
+    "save-assumption": {
+      "source": "hippo-digital/ai-skills-catalogue",
+      "sourceType": "github",
+      "skillPath": "skills/general/save-assumption/SKILL.md",
+      "computedHash": "0f9acf88a4a74e58107ba45acbdc1fd93450b309e27fda326e09cbdf1a2f2aa3"
+    },
+    "save-knowledge": {
+      "source": "hippo-digital/ai-skills-catalogue",
+      "sourceType": "github",
+      "skillPath": "skills/general/save-knowledge/SKILL.md",
+      "computedHash": "fb2c07bdd978b25dffbbce50c88e7808f2662c8d4278a58b62b1dc4155cf256c"
+    },
+    "security-review": {
+      "source": "hippo-digital/ai-skills-catalogue",
+      "sourceType": "github",
+      "skillPath": "skills/security/security-review/SKILL.md",
+      "computedHash": "bbe56691748dca5cd85c04e0492357d3cfb17a02c619b17a5f15cee44bd22cf7"
+    },
+    "test-strategy": {
+      "source": "hippo-digital/ai-skills-catalogue",
+      "sourceType": "github",
+      "skillPath": "skills/qa/test-strategy/SKILL.md",
+      "computedHash": "48e88dc2137e26ed4f75a90e59919a631573087e3d52a571afb93020676e4031"
+    },
+    "value": {
+      "source": "hippo-digital/ai-skills-catalogue",
+      "sourceType": "github",
+      "skillPath": "skills/product/value/SKILL.md",
+      "computedHash": "302af6dfb672467d8dbcb16607df060b65b5b2df5e01d91d874362b6875c3f62"
+    },
+    "verify-feature-security": {
+      "source": "hippo-digital/ai-skills-catalogue",
+      "sourceType": "github",
+      "skillPath": "skills/security/verify-feature-security/SKILL.md",
+      "computedHash": "fec42fe6480e94fb5c7b8ef3939ce010e2d2e90a67ad8e236974d5f93b115842"
+    },
+    "vision": {
+      "source": "hippo-digital/ai-skills-catalogue",
+      "sourceType": "github",
+      "skillPath": "skills/product/vision/SKILL.md",
+      "computedHash": "33d79eabad6bc5c1e25185e3abf061f016a168ceb92875a021aa3886af7e0b12"
+    },
+    "write-tests": {
+      "source": "hippo-digital/ai-skills-catalogue",
+      "sourceType": "github",
+      "skillPath": "skills/qa/write-tests/SKILL.md",
+      "computedHash": "cb32eded33ca747147b65db430c8e3f523b4948d0fc5d41f0ec8421cc49d81f9"
+    }
+  }
+}

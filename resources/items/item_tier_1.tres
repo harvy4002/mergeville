@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ItemDefinition" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/item_definition.gd" id="1_script"]
+[ext_resource type="Resource" path="res://resources/items/item_tier_2.tres" id="2_next"]
+
+[resource]
+script = ExtResource("1_script")
+tier = 1
+display_name = "Sprout"
+color = Color(0.968627, 0.776471, 0.85098, 1)
+next_tier = ExtResource("2_next")
