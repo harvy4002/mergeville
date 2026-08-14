@@ -34,6 +34,16 @@
 
 ## 4. Finalize
 
-- [x] 4.1 Run the complete GUT suite one final time; confirm zero failures across all three PRs. — 24/24 passing (`godot --headless --path . -s addons/gut/gut_cmdln.gd -gexit`).
+- [x] 4.1 Run the complete GUT suite one final time; confirm zero failures across all three PRs. — 46/46 passing (`godot --headless --path . -s addons/gut/gut_cmdln.gd -gexit`).
 - [x] 4.2 Manually inspect `user://save_data.json` against the schema in `intent.md` after a real playtest session. — Inspected after headless runs; matches schema exactly (`{"version":1,"grid":[{"x":..,"y":..,"tier":..}, ...]}`).
 - [ ] 4.3 Hand off to the `finalise` skill to reconcile assumptions ([[ASSUME-002]], [[ASSUME-003]]) and capture any implementation-time knowledge/lessons learned. — Not yet run; do this once 3.10's manual playtest is complete.
+
+## 5. Post-release fix: view churn interrupting animations
+
+Real-device playtest (v0.1.0 APK) reported the game felt "buggy" — flickering/interrupted animations. Root-caused via code review (see [[KB-0003]]) without needing device access: `GridSlot.refresh()` rebuilt its `ItemView` unconditionally, and it was called on all 42 slots on every `grid_changed` emission, so any single action anywhere on the board interrupted every other slot's in-flight animation.
+
+- [x] 5.1 Fix `GridSlot.refresh()` to no-op when the slot's displayed tier hasn't changed (`scripts/merge_grid/grid_slot.gd`).
+- [x] 5.2 Add regression tests: `tests/unit/test_grid_slot.gd` (3 tests — unchanged tier keeps the same `ItemView` instance, changed tier rebuilds it, becoming empty clears it).
+- [x] 5.3 Record root cause and pattern in [[KB-0003]] for the upcoming idle-economy/town-meta features, which will introduce similar broad autoload signals.
+- [x] 5.4 Run the full GUT suite; confirm all pass. — 46/46 passing.
+- [ ] 5.5 Re-run the manual playtest (task 3.10) against the rebuilt APK to confirm this was the actual (or only) cause of the reported "buggy" feel — still outstanding, same reason as 3.10.

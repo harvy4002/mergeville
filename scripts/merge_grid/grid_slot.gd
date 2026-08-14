@@ -9,6 +9,11 @@ const SLOT_SIZE := Vector2(140, 140)
 var grid_position: Vector2i
 var _background: Panel
 var _item_view: ItemView = null
+## Sentinel distinct from any real tier (1-5) or "empty" (null) — forces
+## the first refresh() call to always (re)build the view. Must stay an int
+## (not statically typed as one, since it's later reassigned to null too):
+## GDScript errors on `==` between an int and a String, unlike int vs null.
+var _displayed_tier = -1
 
 func _ready() -> void:
 	custom_minimum_size = SLOT_SIZE
@@ -25,11 +30,19 @@ func _ready() -> void:
 
 	refresh()
 
+## Rebuilds the displayed item only if this slot's tier actually changed —
+## grid_changed fires on every action anywhere on the board, and a naive
+## unconditional rebuild here would destroy/recreate all 42 views (and cut
+## short any in-flight merge_pop animation) on every single tap or merge.
 func refresh() -> void:
+	var tier = GameState.get_item(grid_position)
+	if tier == _displayed_tier:
+		return
+	_displayed_tier = tier
+
 	if _item_view != null and is_instance_valid(_item_view):
 		_item_view.queue_free()
 		_item_view = null
-	var tier = GameState.get_item(grid_position)
 	if tier != null:
 		_item_view = ItemView.new()
 		_item_view.tier = tier
